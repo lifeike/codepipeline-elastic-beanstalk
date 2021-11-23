@@ -1,9 +1,8 @@
 const express = require("express")
 const app = express()
 
-const message = "hello, this is feeco"
 app.get("/", function (req, res) {
-  res.send(message)
+  res.send("hello, this is backend deployment")
 })
 
 app.listen(8080)
