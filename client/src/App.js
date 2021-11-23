@@ -1,16 +1,17 @@
-import logo from "./logo.svg"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import "./App.css"
 import axios from "axios"
 
 function App() {
-  const [flowers, setFlowers] = useState()
+  const [flowers, setFlowers] = useState({})
 
-  axios.get("http://localhost:8080/flowers").then((res) => {
-    setFlowers(res.data)
-  })
+  useEffect(() => {
+    axios.get("/flowers").then((res) => {
+      setFlowers(res.data)
+    })
+  }, [])
 
-  return <h1>{flowers}</h1>
+  return <h1>{flowers.name}</h1>
 }
 
 export default App
