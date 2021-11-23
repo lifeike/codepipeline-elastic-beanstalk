@@ -1,0 +1,5 @@
+phases:
+  post_build:
+    commands:
+      - cd client/
+      - npm run build
