@@ -6,11 +6,11 @@ import axios from "axios"
 function App() {
   const [flowers, setFlowers] = useState()
 
-  axios.get("/flowers").then((res) => {
+  axios.get("http://localhost:8080/flowers").then((res) => {
     setFlowers(res.data)
   })
 
-  return <h1>{flowers.name}</h1>
+  return <h1>{flowers}</h1>
 }
 
 export default App
