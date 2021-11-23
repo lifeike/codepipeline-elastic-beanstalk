@@ -1,0 +1,22 @@
+{
+  "name": "codepipeline-elastic-beanstalk",
+  "version": "1.0.0",
+  "description": "elastic beanstalk deploy full mern stack app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lifeike/codepipeline-elastic-beanstalk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lifeike/codepipeline-elastic-beanstalk/issues"
+  },
+  "homepage": "https://github.com/lifeike/codepipeline-elastic-beanstalk#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
