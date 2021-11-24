@@ -11,7 +11,13 @@ function App() {
     })
   }, [])
 
-  return <h1>{flowers.name}</h1>
+  return (
+    <div>
+      <h1>{flowers.name}</h1>
+      <h1>{flowers.name}</h1>
+      <h1>{flowers.name}</h1>
+    </div>
+  )
 }
 
 export default App
