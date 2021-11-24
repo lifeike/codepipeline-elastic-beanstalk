@@ -6,23 +6,23 @@ phases:
       # install npm
       - cd ./client/
       - npm install
-      - echo "pwd pwd pwd"
+      - echo "go to client folder and install dep then pwd"
       - pwd
 
   build:
     commands:
       # run build script
       - npm run build
-      - echo "pwd pwd pwd"
+      - echo "go to client folder and build"
       - pwd
 
 artifacts:
   # include all files required to run application
   # notably excluded is node_modules, as this will cause overwrite error on deploy
   files:
-    - public/**/*
-    - build/**/*
-    - src/**/*
+    - client/public/**/*
+    - client/build/**/*
+    - client/src/**/*
     - package.json
     - buildspec.yml
     - scripts/**/*
