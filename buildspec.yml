@@ -9,7 +9,7 @@ phases:
       - npm install
       - echo "go to client folder and install dep then pwd"
       - pwd
-      - ls
+      - ls ./build
 
   build:
     commands:
@@ -17,7 +17,7 @@ phases:
       - npm  run build
       - echo "go to client folder and build"
       - pwd
-      - ls
+      - ls ./build
 
 artifacts:
   # include all files required to run application
