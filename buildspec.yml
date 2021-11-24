@@ -4,7 +4,9 @@ phases:
   install:
     commands:
       # install npm
-      - npm --prefix ./client install
+      - npm install
+      - cd ./client/
+      - npm install
       - echo "go to client folder and install dep then pwd"
       - pwd
       - ls
@@ -12,7 +14,7 @@ phases:
   build:
     commands:
       # run build script
-      - npm --prefix ./client run build
+      - npm  run build
       - echo "go to client folder and build"
       - pwd
       - ls
