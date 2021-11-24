@@ -7,14 +7,14 @@ phases:
       - cd ./client/
       - npm install
       - echo "pwd pwd pwd"
-      - echo pwd
+      - pwd
 
   build:
     commands:
       # run build script
       - npm run build
       - echo "pwd pwd pwd"
-      - echo pwd
+      - pwd
 
 artifacts:
   # include all files required to run application
