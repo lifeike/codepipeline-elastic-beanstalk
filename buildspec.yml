@@ -9,7 +9,7 @@ phases:
       - npm install
       - echo "go to client folder and install dep then pwd"
       - pwd
-      - ls ./build
+      - ls
 
   build:
     commands:
