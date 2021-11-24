@@ -6,6 +6,7 @@ const port = process.env.HTTP_PORT || 8080
 
 app.use(express.static(path.join(__dirname, "client", "build")))
 
+//test
 app.get("/", function (req, res) {
   res.send("hello, this is backend ")
 })
